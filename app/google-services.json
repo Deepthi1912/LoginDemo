@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480935272975",
+    "firebase_url": "https://shaare-app.firebaseio.com",
+    "project_id": "shaare-app",
+    "storage_bucket": "shaare-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480935272975:android:798461bb2467838f59f97a",
+        "android_client_info": {
+          "package_name": "com.example.logindemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480935272975-fjmbmksh65o6psep5ufavca2jldg0b3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logindemo",
+            "certificate_hash": "25a3d64f9434d183059c31eefd429621cf0f44b7"
+          }
+        },
+        {
+          "client_id": "480935272975-3ks1m60mtmbtkmqa09craq9cp5kfmcbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASnGopIKtSb9khAMFrmaZ40w0spTMD1kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480935272975-3ks1m60mtmbtkmqa09craq9cp5kfmcbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
