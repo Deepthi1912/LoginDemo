@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser user =firebaseAuth.getCurrentUser();
         if(user!=null){
             finish();
-            startActivity(new Intent(MainActivity.this, SekendActivity.class));
+            startActivity(new Intent(MainActivity.this, Dashboardclg.class));
         }
 
         Login.setOnClickListener(new View.OnClickListener() {
@@ -78,10 +78,10 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     progressDialog.dismiss();
-                    //Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                     checkEmailVerification();
 
-                    startActivity(new Intent(MainActivity.this, SekendActivity.class));
+                    startActivity(new Intent(MainActivity.this, Dashboardclg.class));
                 }else{
                     Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                     counter--;

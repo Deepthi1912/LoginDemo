@@ -46,18 +46,18 @@ public class RegistrationActivity extends AppCompatActivity {
                     firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
 
-                            public void onComplete (@NonNull Task < AuthResult > task) {
-                                if (task.isSuccessful()) {
-                                    sendEmailVerification();
-                                    //startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
-                                } else {
-                                    Toast.makeText(RegistrationActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
-                                }
-
+                        public void onComplete (@NonNull Task < AuthResult > task) {
+                            if (task.isSuccessful()) {
+                                sendEmailVerification();
+                                //startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+                            } else {
+                                Toast.makeText(RegistrationActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                             }
 
+                        }
 
-                        });
+
+                    });
                 }
             }
         });
